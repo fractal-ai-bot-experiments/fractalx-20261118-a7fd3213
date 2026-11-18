@@ -1,0 +1,10 @@
+{
+ "n_per_class": 60,
+ "margin": 1.0,
+ "n_candidates": 3872,
+ "class_counts_before_balance": {
+  "hand_arm": 928,
+  "foot_leg": 123,
+  "mouth": 82
+ }
+}
