@@ -56,8 +56,10 @@ Procedure:
 
 Status: succeeded. Verdict: Not supported. Seeds: 0, 1, 2.
 
+Claim tested: the model places tool words by body part better than word similarity does.
+
 ```text
-No: at the chosen layer (31), Qwen3-8B's hidden states put 0.615 of held-out tool words nearest the body part that uses them. GloVe word vectors score about the same (0.611); chance is 0.33.
+Yes, tool words sit nearest the body part that uses them (0.615 at the chosen layer, 31; chance is 0.33), but no more than plain word similarity does: GloVe word vectors score 0.611.
 ```
 
 Numbers from the results file:
@@ -150,3 +152,5 @@ These raw outputs held a string shaped like a secret key, or a content check fla
 ## Figures
 
 ![Figure 1](figures/figure-1.png)
+
+Corrected 18 November 2026: the first version of the answer began 'No:' and could be read as saying tool words do not sit near their body part. The numbers are unchanged.

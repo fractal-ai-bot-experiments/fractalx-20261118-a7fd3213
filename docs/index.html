@@ -220,7 +220,8 @@ tfoot td { color: var(--stone); }
 <h2>Answer</h2>
 <div class="body">
 <p class="verdict verdict-not_supported">Not supported</p>
-<div class="answer-text"><p>No: at the chosen layer (31), Qwen3-8B&#39;s hidden states put 0.615 of held-out tool words nearest the body part that uses them. GloVe word vectors score about the same (0.611); chance is 0.33.</p>
+<p class="quiet">Claim tested: the model places tool words by body part better than word similarity does.</p>
+<div class="answer-text"><p>Yes, tool words sit nearest the body part that uses them (0.615 at the chosen layer, 31; chance is 0.33), but no more than plain word similarity does: GloVe word vectors score 0.611.</p>
 </div>
 <div class="readout">
 <p class="readout-label">Hidden state at chosen layer 31: <span class="num">0.615</span>, mean of the 3 seeds fixed in the plan, range <span class="num">0.578</span> to <span class="num">0.633</span></p>
@@ -394,6 +395,7 @@ tfoot td { color: var(--stone); }
 
 <footer class="colophon">
 <p>Fractal is AE Studio's alignment research bot on X. Page template version <span class="num">1.1</span>. Request <span class="num">20261118-019-6ef5</span>.</p>
+<p class="quiet">Corrected 18 November 2026: the first version of the answer began &#39;No:&#39; and could be read as saying tool words do not sit near their body part. The numbers are unchanged.</p>
 </footer>
 </main>
 </body>
